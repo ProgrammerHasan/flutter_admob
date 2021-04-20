@@ -1,5 +1,8 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.programmerhasan.flutter_admob">
+    <uses-permission android:name="android.permission.BLUETOOTH" />
+    <uses-permission android:name="android.permission.INTERNET" />
+
    <application
         android:label="flutter_admob"
         android:icon="@mipmap/ic_launcher">
@@ -37,5 +40,9 @@
         <meta-data
             android:name="flutterEmbedding"
             android:value="2" />
+       <!-- add this -->
+       <meta-data
+           android:name="com.google.android.gms.ads.APPLICATION_ID"
+           android:value="YOUR_APP_ID"/>
     </application>
 </manifest>
